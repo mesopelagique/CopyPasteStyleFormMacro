@@ -1,6 +1,6 @@
 # FormMacro
 
-Examples to copy some style key from one selected objet to another.
+Examples to copy some style keys from one selected objet to another.
 
 ## Macro classes
 
@@ -12,9 +12,13 @@ An abtract class [FormMacro](Project/Sources/Classes/FormMacro.4dm) allow to sha
 
 [CopyStyle](Project/Sources/Classes/CopyStyle.4dm) copy selected object style into pasteboard using JSON format.
 
-Because some style are not defined in object by applying `Null` to an object will failed, `defaultValue` function provide default value for some object keys.
+Not all style keys are copyed, a list is in code [here](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/CopyStyle.4dm#L3)
 
-> For instance `fontSize` 0 is Automatic, no `borderStyle` is "none"
+
+Because some style are not defined in object by applying `Null` to an object will failed, [`defaultValue`](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/CopyStyle.4dm#L33) function provide default value for some object keys.
+
+> - `fontSize` 0 is for Automatic
+> - no `borderStyle` is "none"
 
 ### PasteStyle
 
