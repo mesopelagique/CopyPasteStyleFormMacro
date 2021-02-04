@@ -1,46 +1,12 @@
  {
    "macros": {
-     "0- Open Macros file": {
-       "class": "OpenMacro"
-     },
-     "1- Set Red": {
-       "class": "SetRedColor"
-     },
-     "2- Set Font Color to Red": {
-       "class": "SetFontColor",
-       "color": "red"
-     },
-     "2- Set Font Color to Green": {
-       "class": "SetFontColor",
-       "color": "green"
-     },
-     "3- Add Hello World button": {
-       "class": "AddButton"
-     },
-     "4- List object with infos": {
-       "class": "ObjectList"
-     },
-     "5- Check Image Path": {
-       "class": "CheckImagePath"
-     },
-     "6- Check Method Path": {
-       "class": "CheckMethodPath"
-     },
-     "7- Align to Left on Target Object": {
-       "class": "AlignOnTarget",
+     "Style ✂️": {
+       "class": "CopyStyle",
        "type": "left"
      },
-     "7- Align to Right on Target Object": {
-       "class": "AlignOnTarget",
-       "type": "right"
-     },
-     "7- Align to Top on Target Object": {
-       "class": "AlignOnTarget",
-       "type": "top"
-     },
-     "7- Align to Bottom on Target Object": {
-       "class": "AlignOnTarget",
-       "type": "down"
+     "Style 📋": {
+       "class": "PasteStyle",
+       "type": "left"
      }
    }
  }
