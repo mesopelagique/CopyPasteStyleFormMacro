@@ -28,3 +28,4 @@ Because some style are not defined in object by applying `Null` to an object wil
 
 - Apply the style to a list of selected elements (easy, you could PR if you implement i)
 - More style keys
+- Instead of settings null, unset when pasting style if not defined
