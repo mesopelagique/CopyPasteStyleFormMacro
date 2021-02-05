@@ -14,6 +14,7 @@ An abtract class [FormMacro](Project/Sources/Classes/FormMacro.4dm) allow to sha
 
 Not all style keys are copyed, a list is in code [here](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/CopyStyle.4dm#L3)
 
+#### to fix see todo
 
 Because some style are not defined in object by applying `Null` to an object will failed, [`defaultValue`](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/CopyStyle.4dm#L33) function provide default value for some object keys.
 
