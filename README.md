@@ -4,7 +4,7 @@ Examples to copy some style keys from one selected objet to another.
 
 ## Macro classes
 
-List of macro defined here [Project/Sources/FormMacros.jso](Project/Sources/FormMacros.json)
+List of macro defined here [Project/Sources/FormMacros.json](Project/Sources/FormMacros.json)
 
 An abtract class [FormMacro](Project/Sources/Classes/FormMacro.4dm) allow to share some functions between macro classes
 
