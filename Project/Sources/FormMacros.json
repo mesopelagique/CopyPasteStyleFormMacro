@@ -1,12 +1,16 @@
- {
-   "macros": {
-     "Style ✂️": {
-       "class": "CopyStyle",
-       "type": "left"
-     },
-     "Style 📋": {
-       "class": "PasteStyle",
-       "type": "left"
-     }
-   }
- }
+{
+	"macros": {
+		"Save Style 💾": {
+			"class": "SaveStyle"
+		},
+		"Load Style 🎨": {
+			"class": "LoadStyle"
+		},
+		"Copy Style ✂️": {
+			"class": "CopyStyle"
+		},
+		"Paste Style 📋": {
+			"class": "PasteStyle"
+		}
+	}
+}

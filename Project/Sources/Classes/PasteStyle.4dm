@@ -1,5 +1,9 @@
-Class extends FormMacro
+Class extends StyleMacro
 
+Class constructor($config : Object)
+	Super:C1705($config)
+	This:C1470.label:="Style 📋"
+	
 Function onInvoke($editor : Object)->$result : Object
 	
 	$result:=Null:C1517
@@ -20,10 +24,8 @@ Function onInvoke($editor : Object)->$result : Object
 			
 			var $object : Object
 			$object:=This:C1470.getSelectedObject($editor)
-			var $key : Text
-			For each ($key; $style)
-				$object.object[$key]:=$style[$key]
-			End for each 
+			
+			This:C1470.applyStyle($style; $object)
 			
 			$result:=This:C1470.notifyCurrentPage($editor)
 	End case 
