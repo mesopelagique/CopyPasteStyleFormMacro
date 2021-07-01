@@ -17,7 +17,7 @@ List of macro defined here [Project/Sources/FormMacros.json](Project/Sources/For
 
 [CopyStyle](Project/Sources/Classes/CopyStyle.4dm) copy selected object style into pasteboard using JSON format.
 
-Not all style keys are copyed, a list of keys is [here](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/StyleMacro.4dm#L4) in code. More could be added, see todo (like background color...)
+Not all style keys are copyed, a list of keys is [here](Project/Sources/Classes/StyleMacro.4dm#L4) in code. More could be added, see todo (like background color...)
 
 ### PasteStyle
 
