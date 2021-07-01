@@ -1,4 +1,4 @@
-# FormMacro
+# CopyPasteStyleFormMacro
 
 Examples to copy some style keys from one selected objet to another.
 
