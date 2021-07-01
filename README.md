@@ -19,13 +19,6 @@ List of macro defined here [Project/Sources/FormMacros.json](Project/Sources/For
 
 Not all style keys are copyed, a list of keys is [here](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/StyleMacro.4dm#L4) in code. More could be added, see todo (like background color...)
 
-#### to fix see todo
-
-Because some style are not defined in object by applying `Null` to an object will failed, [`defaultValue`](https://github.com/mesopelagique/Example-FormMacro-CopyPasteStyle/blob/master/Project/Sources/Classes/StyleMacro.4dm#L23) function provide default value for some object keys.
-
-> - `fontSize` 0 is for Automatic
-> - no `borderStyle` is "none"
-
 ### PasteStyle
 
 [PasteStyle](Project/Sources/Classes/PasteStyle.4dm) get the style from pasteboard and apply to the selected element
