@@ -1,7 +1,7 @@
 Class extends FormMacro
 
 Class constructor($config : Object)
-	This:C1470.toCopy:=New collection:C1472("class"; "stroke"; "strole"; "style"; "textPlacement"; "borderStyle"; \
+	This:C1470.toCopy:=New collection:C1472("class"; "stroke"; "style"; "textPlacement"; "borderStyle"; \
 		"fontFamily"; "fontSize"; "fontStyle"; "textDecoration"; "fontWeight")
 	
 Function styleFile()->$file : Object
@@ -21,27 +21,38 @@ Function styleFromObject($object : Object)->$style : Object
 	End for each 
 	
 Function defaultValue($key : Text)->$var : Variant
-	Case of 
-		: ($key="style")
-			$var:="regular"
-		: ($key="borderStyle")
-			$var:="none"
-		: ($key="textPlacement")
-			$var:="left"
-		: ($key="fontStyle")
-			$var:="normal"
-		: ($key="fontWeight")
-			$var:="normal"
-		: ($key="fontSize")
-			$var:=0
-		: ($key="textDecoration")
-			$var:="none"
-		Else 
-			$var:=Null:C1517
-	End case 
+/*
+Case of 
+: ($key="style")
+$var:="regular"
+: ($key="borderStyle")
+$var:="none"
+: ($key="textPlacement")
+$var:="left"
+: ($key="fontStyle")
+$var:="normal"
+: ($key="fontWeight")
+$var:="normal"
+: ($key="fontSize")
+$var:=0
+: ($key="textDecoration")
+$var:="none"
+: ($key="class")
+$var:=""
+: ($key="stroke")
+$var:=""
+: ($key="fontFamily")
+$var:="normal"
+Else */
+	$var:=Null:C1517
+/*End case */
 	
 Function applyStyle($style : Object; $object : Object)
 	var $key : Text
 	For each ($key; $style)
-		$object.object[$key]:=$style[$key]
+		If ($style[$key]=Null:C1517)
+			OB REMOVE:C1226($object.object; $key)
+		Else 
+			$object.object[$key]:=$style[$key]
+		End if 
 	End for each 
