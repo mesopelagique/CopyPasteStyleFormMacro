@@ -2,6 +2,8 @@
 
 Examples to copy some style keys from one selected objet to another.
 
+![Screencast](Screencast.gif)
+
 ## Macro classes
 
 List of macro defined here [Project/Sources/FormMacros.json](Project/Sources/FormMacros.json)
